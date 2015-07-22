@@ -1,0 +1,29 @@
+{
+	"name": "Sketch Template Plugin",
+	"description": "A bare-bones template for Sketch Plugins",
+	"author": "Matt Curtis",
+	"homepage": "http://github.com/matt-curtis/SketchTemplatePlugin",
+	"version": 1.0,
+
+	"identifier": "com.example.sketch.template-plugin",
+	"updateURL": "http://raw.github.com/matt-curtis/SketchTemplatePlugin/manifest.json",
+	"compatibleVersion": 3,
+	"bundleVersion": 1,
+
+	"commands": [
+			{
+				"name": "Example Command",
+				"identifier": "example-command-identifier",
+				"shortcut": "cmd shift a",
+				"script": "commands.js",
+				"handler": "yourCommand"
+			}
+	],
+
+	"menu": [
+		{
+			"isRoot": true,
+			"items": [ "example-command-identifier" ]
+		}
+	]
+}
